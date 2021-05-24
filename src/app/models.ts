@@ -5,6 +5,7 @@ export interface Game {
     metacritic_url: string;
     website: string;
     description: string;
+    id: string,
     metacritic: number;
     genres: Array<Genre>;
     parent_platforms: Array<ParentPlatform>;
@@ -25,6 +26,7 @@ interface Genre {
 interface ParentPlatform {
     platform: {
         name: string;
+        slug: string;
     };
 }
 
